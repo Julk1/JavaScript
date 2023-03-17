@@ -1,10 +1,10 @@
 
-function getBiggestElem(arr) {
-    let biggestElem = arr[0];
+function getBiggestElem(arr1) {
+    let biggestElem = arr1[0];
 
-    for (let i = 0; i < arr.length; i++) {
-      if ( arr[i] >  biggestElem) {
-        biggestElem = arr[i];
+    for (let i = 0; i < arr1.length; i++) {
+      if ( arr1[i] >  biggestElem) {
+        biggestElem = arr1[i];
       }
     }
 

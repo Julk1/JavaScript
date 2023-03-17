@@ -12,4 +12,4 @@ function getSmallestElem(arr) {
     return smallestElem;
 }
 
-console.log(getSmallestElem([2, 25, 53, 250, 105, 73, -11, 10, 0, 35]))
+console.log(getSmallestElem([2, 44, 53, 250, 105, 73, -11, 10, 0, 35]))

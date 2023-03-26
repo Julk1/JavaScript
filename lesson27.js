@@ -1,8 +1,8 @@
-let number1 = prompt('Number 1');
-let number2 = prompt('Number 2');
+let number1 = prompt('Number_1');
+let number2 = prompt('Number_2');
 
 
-//  Функція для перевірки на числовий тип
+//  Перевірка на числовий тип
 function areNumbers(number1,number2){
     if (isNaN(number1) || isNaN(number2)){
         return 'Arguments are not numbers!';
@@ -11,7 +11,7 @@ function areNumbers(number1,number2){
     }
 }
 
-// Функція для перевірки на порожнє введення
+// Перевірка на порожнє введення
 function areEmpty(number1,number2){
     if (number1 === '' || number2 === ''){
         return 'The entered value cannot be empty';
@@ -20,7 +20,7 @@ function areEmpty(number1,number2){
        }
 }
 
-// Функція на встановлення кольору (градація)
+// Функція на встановлення кольору 
 function setColor(result, resultElement) {
     if (result < 0 && result >= -10) {
         resultElement.style.color = 'rgb(255, 96, 176)';
@@ -108,8 +108,6 @@ function division(number1,number2) {
         alert('Arguments are not numbers!');
     }  else if (areEmpty(number1, number2)) {
         alert('The entered value cannot be empty!');
-    } else if (number2 === 0) {
-        alert('Division is not possible!');
     } else {
         const result = number1 / number2;
         const resultElement = document.getElementById('division');

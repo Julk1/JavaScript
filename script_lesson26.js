@@ -1,4 +1,4 @@
-// функція-конструктор Accumulator
+// Конструктор Accumulator
 
 function Accumulator(startingValue) {
 

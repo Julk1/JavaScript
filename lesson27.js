@@ -1,5 +1,5 @@
-let number1 = prompt('Number 1');
-let number2 = prompt('Number 2');
+let number1 = prompt('Number1');
+let number2 = prompt('Number2');
 
 
 //  Функція для перевірки на числовий тип
@@ -23,15 +23,15 @@ function areEmpty(number1,number2){
 // Функція на встановлення кольору (градація)
 function setColor(result, resultElement) {
     if (result < 0 && result >= -10) {
-        resultElement.style.color = 'rgb(248, 96, 300)';
+        resultElement.style.color = 'rgb(255, 96, 176)';
     } else if (result < -10 && result >= -100) {
-        resultElement.style.color = 'rgb(228, 26, 26)';
+        resultElement.style.color = 'rgb(252, 33, 33)';
     } else if (result < -100 && result >= -1000) {
-        resultElement.style.color = 'rgb(140, 14, 14)';
+        resultElement.style.color = 'rgb(199, 10, 10)';
     } else if (result < -1000 && result >= -10000) {
-        resultElement.style.color = 'rgb(87, 10, 10)';
+        resultElement.style.color = 'rgb(161, 8, 8)';
     } else if (result < -10000 && result >= -1000000) {
-        resultElement.style.color = 'rgb(41, 3, 3)';
+        resultElement.style.color = 'rgb(31, 1, 1)';
     }
 }
 
@@ -164,4 +164,4 @@ function findMax(arr) {
 
 
 findMin([36, 20, 7, 20, 'one', -10]);
-findMax([45, 25, 7, 2000, 'one']);
+findMax([45, 25, 7, -3, 'one']);

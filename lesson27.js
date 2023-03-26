@@ -1,5 +1,5 @@
-let number1 = prompt('Number1');
-let number2 = prompt('Number2');
+let number1 = prompt('Number 1');
+let number2 = prompt('Number 2');
 
 
 //  Функція для перевірки на числовий тип

@@ -1,12 +1,14 @@
 const user = {
     name: prompt('Як тебе звати?'),
-    age: prompt('Скільки тобі років?', 0),
-    
+    age: prompt('Скільки тобі років?'),
+
     sayHello: function() {
-      return `Привіт, я ${this.name}, мені ${this.age} років`;
+    
+        alert(message= `Привіт, я ${this.name}, мені ${this.age} років`);
+        return `Привіт, я ${this.name}, мені ${this.age} років`;
     }
   };
 
 
 
-  console.log(user.sayHello()); // Привіт, я John, мені 30 років
+  console.log(user.sayHello()); // Приклад (Привіт, я John, мені 30 років)

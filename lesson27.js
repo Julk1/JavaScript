@@ -1,10 +1,10 @@
-let num1 = prompt('num1');
-let num2 = prompt('num2');
+let num1 = prompt('number1');
+let num2 = prompt('number2');
 
 
 //  Функція для перевірки на числовий тип
-function areNumbers(num1,num2){
-    if (isNaN(num1) || isNaN(num2)){
+function areNumbers(number1,number2){
+    if (isNaN(number1) || isNaN(number2)){
         return 'Arguments are not numbers!';
     } else {
         return false;
@@ -12,8 +12,8 @@ function areNumbers(num1,num2){
 }
 
 // Функція для перевірки на порожнє введення
-function areEmpty(num1,num2){
-    if (num1 === '' || num2 === ''){
+function areEmpty(number1,number2){
+    if (number1 === '' || number2 === ''){
         return 'The entered value cannot be empty';
        } else {
         return false;
@@ -23,7 +23,7 @@ function areEmpty(num1,num2){
 // Функція на встановлення кольору (градація)
 function setColor(result, resultElement) {
     if (result < 0 && result >= -10) {
-        resultElement.style.color = 'rgb(248, 96, 96)';
+        resultElement.style.color = 'rgb(248, 96, 300)';
     } else if (result < -10 && result >= -100) {
         resultElement.style.color = 'rgb(228, 26, 26)';
     } else if (result < -100 && result >= -1000) {
@@ -37,13 +37,13 @@ function setColor(result, resultElement) {
 
 
 //  Додавання 
-function addition(num1, num2) {
-    if(areNumbers(num1, num2)) {
+function addition(number1, number2) {
+    if(areNumbers(number1, number2)) {
         alert('Arguments are not numbers!');
-    }  else if (areEmpty(num1, num2)) {
+    }  else if (areEmpty(number1, number2)) {
         alert('The entered value cannot be empty!');
     } else {
-        const result = Number(num1) + Number(num2);
+        const result = Number(number1) + Number(number2);
         const resultElement = document.getElementById('addition');
         resultElement.textContent = result;
         resultElement.style.color = result < 0 ? 'red':'green';
@@ -55,15 +55,15 @@ function addition(num1, num2) {
 
 
 // Віднімання
-function subtraction(num1,num2) {
-    if(areNumbers(num1, num2)) {
+function subtraction(number1,number2) {
+    if(areNumbers(number1, number2)) {
         alert('Arguments are not numbers!');
-    }  else if (areEmpty(num1, num2)) {
+    }  else if (areEmpty(number1, number2)) {
         alert('The entered value cannot be empty!');
-    } else if (num1 < num2) {
+    } else if (number1 < number2) {
         let message = confirm('Are you sure you want to continue?');
        if (message === true) {
-        const result = num1 - num2;
+        const result = number1 - number2;
         const resultElement = document.getElementById('subtraction');
         resultElement.textContent = result;
         resultElement.style.color = result < 0 ? 'red':'green';
@@ -73,7 +73,7 @@ function subtraction(num1,num2) {
         return 'Operation was cancelled';
        }
     } else {
-        const result = num1 - num2;
+        const result = number1 - number2;
         const resultElement = document.getElementById('subtraction');
         resultElement.textContent = result;
         resultElement.style.color = result < 0 ? 'red':'green';
@@ -83,13 +83,13 @@ function subtraction(num1,num2) {
 }
 
 // Множення
-function multiplication(num1,num2) {
-    if(areNumbers(num1, num2)) {
+function multiplication(number1,number2) {
+    if(areNumbers(number1, number2)) {
         alert('Arguments are not numbers!');
-    }  else if (areEmpty(num1, num2)) {
+    }  else if (areEmpty(number1, number2)) {
         alert('The entered value cannot be empty!');
     } else {
-        const result = num1 * num2;
+        const result = number1 * number2;
         const resultElement = document.getElementById('multiplication');
         resultElement.textContent = result;
         resultElement.style.color = result < 0 ? 'red':'green';
@@ -100,18 +100,18 @@ function multiplication(num1,num2) {
 
 
 // Ділення
-function division(num1,num2) {
+function division(number1,number2) {
     
-    num2 = Number(num2);
+    num2 = Number(number2);
 
-    if(areNumbers(num1, num2)) {
+    if(areNumbers(number1, number2)) {
         alert('Arguments are not numbers!');
-    }  else if (areEmpty(num1, num2)) {
+    }  else if (areEmpty(number1, number2)) {
         alert('The entered value cannot be empty!');
-    } else if (num2 === 0) {
+    } else if (number2 === 0) {
         alert('Division is not possible!');
     } else {
-        const result = num1 / num2;
+        const result = number1 / number2;
         const resultElement = document.getElementById('division');
         resultElement.textContent = result;
         resultElement.style.color = result < 0 ? 'red':'green';
@@ -121,10 +121,10 @@ function division(num1,num2) {
 }
 
 
-addition(num1, num2);
-subtraction(num1, num2);
-multiplication(num1, num2);
-division(num1, num2);
+addition(number1, number2);
+subtraction(number1, number2);
+multiplication(number1, number2);
+division(number1, number2);
 
 
 // Масиви

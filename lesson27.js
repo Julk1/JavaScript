@@ -1,5 +1,5 @@
-let num1 = prompt('number1');
-let num2 = prompt('number2');
+let number1 = prompt('Number 1');
+let number2 = prompt('Number 2');
 
 
 //  Функція для перевірки на числовий тип
@@ -163,5 +163,5 @@ function findMax(arr) {
 }
 
 
-findMin([36, 20, 7, 20, 'one', -134]);
+findMin([36, 20, 7, 20, 'one', -10]);
 findMax([45, 25, 7, 2000, 'one']);

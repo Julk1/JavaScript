@@ -69,16 +69,10 @@ function subtraction(number1,number2) {
         resultElement.style.color = result < 0 ? 'red':'green';
         setColor(result, resultElement);
         return result; 
-       } else {
-        return 'Operation was cancelled';
+       } 
+       else {
+        alert ('Operation was cancelled');
        }
-    } else {
-        const result = number1 - number2;
-        const resultElement = document.getElementById('subtraction');
-        resultElement.textContent = result;
-        resultElement.style.color = result < 0 ? 'red':'green';
-        setColor(result, resultElement);
-        return result; 
     }
 }
 
@@ -102,12 +96,15 @@ function multiplication(number1,number2) {
 // Ділення
 function division(number1,number2) {
     
-    num2 = Number(number2);
+    number2 = Number(number2);
 
     if(areNumbers(number1, number2)) {
         alert('Arguments are not numbers!');
     }  else if (areEmpty(number1, number2)) {
         alert('The entered value cannot be empty!');
+    } else if (number2 === 0) {
+        alert('Division is impossible!');
+
     } else {
         const result = number1 / number2;
         const resultElement = document.getElementById('division');
@@ -162,4 +159,4 @@ function findMax(arr) {
 
 
 findMin([36, 20, 7, 20, 'one', -10]);
-findMax([45, 25, 7, -3, 'one']);
+findMax([3, 25, 7, -3, 'one']);

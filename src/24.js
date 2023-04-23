@@ -35,27 +35,25 @@ function getProduct(num1, num2) {
     return div = num1/num2;
 }
 
-function getSmallestElem(arr) {
-    
-    let smallestElem = arr[0];
+function findMin(arr) {
+    let min = arr[0];
 
-    for (let elem of arr){
-        if (elem < smallestElem) {
-            smallestElem = elem;
+    for (let elem of arr) {
+        if (typeof elem === 'number' && (min === arr[0] || elem < min)) {
+            min = elem;
         }
     }
-    
-    return smallestElem;
+    return min;
 }
 
-function getBiggestElem(arr1) {
-    let biggestElem = arr1[0];
 
-    for (let i = 0; i < arr1.length; i++) {
-      if ( arr1[i] >  biggestElem) {
-        biggestElem = arr1[i];
-      }
-    }
+function findMax(arr) {
+    let max = arr[0];
 
-    return biggestElem;
+    for (let i = 0; i < arr.length; i++) {
+     if(typeof arr[i] === 'number' && ( max === arr[0] || arr[i] > max)) {
+      max = arr[i];
+     }
+}
+   return max;
 }

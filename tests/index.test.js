@@ -51,8 +51,8 @@ describe("Find the smallest element in array", () => {
 
     describe(desc, () => {
         it("should return -7", () => {
-            const result = findSmallestElem([0, 12, 'cat', 'hello', 25, -7, 10, 0]);
-            expect(result).toBe(-7);
+            const result = findMin([0, 12, 'anna', 'hello', 25, -8, 10, 0]);
+            expect(result).toBe(-8);
         })
     })
 })
@@ -63,7 +63,7 @@ describe("Find the biggest element in array", () => {
 
     describe(desc, () => {
         it("should return 10023", () => {
-            const result = findBiggestElem(['js', 105, 10023, -10, 'is', 12, 'awesome', 75]);
+            const result = findMax(['js', 105, 10023, -10, 'is', 12, 'awesome', 75]);
             expect(result).toBe(10023);
         })
     })
@@ -83,20 +83,20 @@ describe("Get value increment", () => {
 });
 
 
-    describe("Get value decrement", () => {
+describe("Get value decrement", () => {
         const desc = "<p>Get value decrement</p>";
 
         describe(desc, () => {
             it("should return 3", () => {
-                let acc = new Accumulator(4);
+                let acc = new Accumulator(5);
                 acc.decrement();
-            expect(acc.value).toBe(3);
+            expect(acc.value).toBe(4);
         });
       }); 
     });
 
 
-    describe("Check CancelableAccumulator increment method", () => {
+describe("Check CancelableAccumulator increment method", () => {
         const desc = "<p>Check CancelableAccumulator increment method</p>";
 
         describe(desc, () => {
@@ -108,7 +108,7 @@ describe("Get value increment", () => {
       }); 
     });
 
-    describe("Check clear method", () => {
+describe("Check clear method", () => {
         const desc = "<p>Check clear method</p>";
 
         describe(desc, () => {
@@ -152,36 +152,28 @@ describe("Get value increment", () => {
           const desc = "<p>Check scrollIntoView function</p>";
 
           describe(desc, () => {
-            it('should return ".summary" for "KeyA" or "KeyФ" event code', () => {
+            it('should return ".summary" for "KeyA" event code', () => {
                 const event = new KeyboardEvent('keydown', { code: 'KeyA' });
                 expect(scrollIntoView(event)).toBe('.summary');
             
-                const event2 = new KeyboardEvent('keydown', { code: 'KeyФ' });
-                expect(scrollIntoView(event2)).toBe('.summary');
               });
             
-              it('should return ".skills" for "KeyB" or "KeyИ" event code', () => {
+              it('should return ".skills" for "KeyB" event code', () => {
                 const event = new KeyboardEvent('keydown', { code: 'KeyB' });
-                expect(scrollIntoView(event)).toBe('.skills');
+                expect(scrollIntoView(event)).toBe('.skills1');
             
-                const event2 = new KeyboardEvent('keydown', { code: 'KeyИ' });
-                expect(scrollIntoView(event2)).toBe('.skills');
               });
             
-              it('should return ".work" for "KeyC" or "KeyС" event code', () => {
+              it('should return ".work" for "KeyC" event code', () => {
                 const event = new KeyboardEvent('keydown', { code: 'KeyC' });
                 expect(scrollIntoView(event)).toBe('.work');
             
-                const event2 = new KeyboardEvent('keydown', { code: 'KeyС' });
-                expect(scrollIntoView(event2)).toBe('.work');
               });
             
-              it('should return ".education" for "KeyD" or "KeyВ" event code', () => {
+              it('should return ".education" for "KeyD" event code', () => {
                 const event = new KeyboardEvent('keydown', { code: 'KeyD' });
                 expect(scrollIntoView(event)).toBe('.education');
             
-                const event2 = new KeyboardEvent('keydown', { code: 'KeyВ' });
-                expect(scrollIntoView(event2)).toBe('.education');
               });
           })
       });

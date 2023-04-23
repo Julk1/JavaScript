@@ -22,12 +22,12 @@ describe("Find difference of numbers", () => {
 })
 
 
-describe("Find mul of numbers", () => {
-    const desc = "<p>Find mul of numbers</p>";
+describe("Find product of numbers", () => {
+    const desc = "<p>Find product of numbers</p>";
 
     describe(desc, () => {
         it("should return 100", () => {
-            const result = getMul(10, 10);
+            const result = getProduct(10, 10);
             expect(result).toBe(100);
         })
     })
@@ -51,7 +51,7 @@ describe("Find the smallest element in array", () => {
 
     describe(desc, () => {
         it("should return -7", () => {
-            const result = findMin([0, 12, 'cat', 'hello', 25, -7, 10, 0]);
+            const result = findSmallestElem([0, 12, 'cat', 'hello', 25, -7, 10, 0]);
             expect(result).toBe(-7);
         })
     })
@@ -63,7 +63,7 @@ describe("Find the biggest element in array", () => {
 
     describe(desc, () => {
         it("should return 10023", () => {
-            const result = findMax(['js', 105, 10023, -10, 'is', 12, 'awesome', 75]);
+            const result = findBiggestElem(['js', 105, 10023, -10, 'is', 12, 'awesome', 75]);
             expect(result).toBe(10023);
         })
     })

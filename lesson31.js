@@ -1,24 +1,6 @@
-const countdownTimer = document.getElementById('countdown-timer');
-const page = document.querySelector('.page');
-const text = document.querySelector('.page-main-content');
 
 
-
-
-page.style.width='100%';
-page.style.height='680px';
-page.style.background='AFD0D6';
-
-
-text.style.textAlign='center';
-text.style.paddingTop='150px';
-text.style.marginBottom='100px';
-text.style.textTransform='uppercase';
-text.style.fontWeight='bold';
-text.style.letterSpacing='5px';
-text.style.textDecoration='double';
-
-
+const countdownTimer=document.getElementById('countdown-timer');
 
 
 const targetDate= new Date('January 1, 2024 00:00:00').getTime();

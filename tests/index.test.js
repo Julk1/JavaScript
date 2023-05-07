@@ -3,7 +3,7 @@ describe("Find sum of numbers", () => {
 
     describe(desc, () => {
         it("should return 10", () => {
-            const result = getSum(6, 4);
+            const result = getSum(7, 3);
             expect(result).toBe(10);
         })
     })
@@ -26,9 +26,9 @@ describe("Find product of numbers", () => {
     const desc = "<p>Find product of numbers</p>";
 
     describe(desc, () => {
-        it("should return 100", () => {
-            const result = getProduct(10, 10);
-            expect(result).toBe(100);
+        it("should return 200", () => {
+            const result = getProduct(20, 10);
+            expect(result).toBe(200);
         })
     })
 })
@@ -50,8 +50,8 @@ describe("Find the smallest element in array", () => {
     const desc = "<p>Find the smallest element in array</p>";
 
     describe(desc, () => {
-        it("should return -7", () => {
-            const result = findMin([0, 12, 'anna', 'hello', 25, -8, 10, 0]);
+        it("should return -8", () => {
+            const result = findMin([0, 22, 'anna', 'hello', 45, -8, 0]);
             expect(result).toBe(-8);
         })
     })
@@ -62,9 +62,9 @@ describe("Find the biggest element in array", () => {
     const desc = "<p>Find the biggest element in array</p>";
 
     describe(desc, () => {
-        it("should return 10023", () => {
-            const result = findMax(['js', 105, 10023, -10, 'is', 12, 'awesome', 75]);
-            expect(result).toBe(10023);
+        it("should return 26666", () => {
+            const result = findMax(['jack', 105, 26666, -10, 'yes', 22, 'no', 89]);
+            expect(result).toBe(26666);
         })
     })
 })
@@ -87,7 +87,7 @@ describe("Get value decrement", () => {
         const desc = "<p>Get value decrement</p>";
 
         describe(desc, () => {
-            it("should return 3", () => {
+            it("should return 4", () => {
                 let acc = new Accumulator(5);
                 acc.decrement();
             expect(acc.value).toBe(4);
@@ -100,10 +100,10 @@ describe("Check CancelableAccumulator increment method", () => {
         const desc = "<p>Check CancelableAccumulator increment method</p>";
 
         describe(desc, () => {
-            it("should return 2", () => {
-                let Cacc = new CancelableAccumulator(1);
+            it("should return 3", () => {
+                let Cacc = new CancelableAccumulator(2);
                 Cacc.increment();
-            expect(Cacc.value).toBe(2);
+            expect(Cacc.value).toBe(3);
         });
       }); 
     });

@@ -1,0 +1,16 @@
+page.style.width='100%';
+page.style.height='680px';
+page.style.background='AFD0D6';
+
+
+text.style.textAlign='center';
+text.style.paddingTop='150px';
+text.style.marginBottom='100px';
+text.style.textTransform='uppercase';
+text.style.fontWeight='bold';
+text.style.letterSpacing='5px';
+text.style.textDecoration='double';
+
+.page {
+    
+}

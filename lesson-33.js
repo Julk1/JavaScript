@@ -1,28 +1,29 @@
 Array.prototype.pow = function(n) {
 
-    const arr = [];
+    var arr = [];
 
-    for (let i=0; i< this.length; i++) {
-        ar.push (Math.pow(this[i],n));
+    this.forEach (function (x) {
+        arr.push(Math.pow(x,n));
+    });
 
-    }
 
    return arr;
 }
 
-const arr[1,2,3];
-const res = arr.pow(2);
-console.log(res);
+const example = [1, 2, 3];
+const result = example.pow(2);
+console.log(result);
 
-function a() {
-    alert('test');
+Function.prototype.defer = function (n) {
+    const func = this 
+   setTimeout(function() {
+    func.apply()
+   }, n);
 }
 
-Function.prototype.defer = function(n) {
-    let func=this;
-    setTimeout(function(){
-        func();
-    }, n);
-};
+function a() {
+    alert("test");
+}
 
-a.defer(1000);
+a.defer(1000); 
+
